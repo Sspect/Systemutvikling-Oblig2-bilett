@@ -1,0 +1,61 @@
+.rod-farge{
+    color: red;
+}
+
+body{
+    background-color: rgb(204, 204, 204);
+
+    color: #000000;
+}
+
+.sete{
+    height: 40px;
+    width: 40px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.opptattSete{
+    background-color: darkred;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    /* outline: solid black 1px; */
+    text-align: center;
+}
+td{
+    text-align: center;
+    /* outline: solid black 1px; */
+}
+h4{
+
+}
+img{
+    height: 440px;
+}
+
+
+.antall{
+    display: none;
+}
+
+/* usynlige knapper */
+
+.child {
+    display: none; /* Hide the child elements by default */
+}
+td p{
+    margin: 6px;
+    font-size: larger;
+}
+.parent:hover .child {
+    display: block; /* Show the child elements when the parent is being hovered over */
+}
+
+
+
+
+

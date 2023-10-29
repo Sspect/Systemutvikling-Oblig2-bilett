@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap bibiliotek ///////////////////////////////////////////////////////////// -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Css stylesheet ///////////////////////////////////////////////////////////// -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- JQuery bibiliotek ///////////////////////////////////////////////////////////// -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- endre.js kode ///////////////////////////////////////////////////////////// -->
+    <script src="endre.js"></script>
+
+
+    <title>Endre Bilett</title>
+</head>
+<body>
+<!-- HEADER ///////////////////////////////////////////////////////////// -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Hjem</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Bestill bilett</a></li>
+            <li><a href="index.html">Alle biletter</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- h1 Endre kinobilett /////////////////////////////////////////////////////////////////////// -->
+    <div class="row text-center">
+        <div class="col-lg-12 ">
+            <h1>Endre kinobilett</h1>
+        </div>
+    </div>
+
+
+    <!-- Rad med marger og bestill bilett div ///////////////////////////////////////////////// -->
+    <div class="row">
+
+        <!-- Venstre marg ///////////////////////////////////////////////////////////////////// -->
+        <div class="col-lg-3"></div>
+
+        <div class="col-lg-6">
+            <input type="number" id="id" hidden>
+
+
+            <!-- Velg film ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="film" id="filmL">Velg film</label>
+                <select class="form-control" onchange="erFeltetTomt(this.id)" id="film">                 <!-- ID -->
+                    <!-- Film valg ///////////////////////////////////////////////////////////// -->
+                    <option value="">Velg film</option>
+                    <option value="Inception">Inception</option>
+                    <option value="Toy Story 3">Toy Story 3</option>
+                    <option value="127 Hours">127 Hours</option>
+                    <option value="Despicable Me">Despicable Me</option>
+                </select>
+            </div>
+
+            <!-- Fornavn ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="fornavn" id="fornavnL">Fornavn</label>
+                <input type="text" class="form-control" onchange="erFeltetTomt(this.id)" id="fornavn"/>      <!-- ID -->
+            </div>
+
+            <!-- Etternavn ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="etternavn" id="etternavnL">Etternavn</label>
+                <input type="text" class="form-control" onchange="erFeltetTomt(this.id)" id="etternavn"/>    <!-- ID -->
+            </div>
+
+            <!-- Epost ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="epost"  id="epostL">Epost</label>
+                <input type="text" class="form-control" onchange="erFeltetTomt(this.id)" id="epost"/>        <!-- ID -->
+            </div>
+
+            <!-- Tellefonnummer ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="tellefonnummer" id="tellefonnummerL">Tellefonnummer</label>
+                <input type="number" class="form-control" onchange="erFeltetTomt(this.id)" id="tellefonnummer"/><!-- ID -->
+            </div>
+
+            <!-- Antall ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">
+                <label for="antall" id="antallL">Antall</label>
+                <input type="number" class="form-control" onchange="erFeltetTomt(this.id)" id="antall"/>        <!-- ID -->
+            </div>
+
+            <!-- Knapp ///////////////////////////////////////////////////////////////////// -->
+            <div class="form-group">            <!-- ONCLICK -->
+                <button class="btn btn-primary" onclick="endreBilett()">Endre</button>
+            </div>
+
+        </div>
+
+        <!-- høyre marg ///////////////////////////////////////////////////////////////////// -->
+        <div class="col-lg-3"></div>
+
+
+    </div>
+
+
+</div>
+
+<div class="ut"></div>
+</body>
+</html>

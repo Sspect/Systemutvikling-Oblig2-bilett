@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Bootstrap bibiliotek ///////////////////////////////////////////////////////////// -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Css stylesheet ///////////////////////////////////////////////////////////// -->
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- JQuery bibiliotek ///////////////////////////////////////////////////////////// -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- JS kode ///////////////////////////////////////////////////////////// -->
+    <script src="index.js"></script>
+
+    <title>index</title>
+</head>
+<body>
+
+<!-- HEADER ///////////////////////////////////////////////////////////// -->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Hjem</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="bestill.html">Bestill bilett</a></li>
+            <li><a href="index.html">Alle biletter</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- TABELL ///////////////////////////////////////////////////////////// -->
+<div class="container">
+    <table class="table" id="ut">
+
+    </table>
+    <a href="bestill.html"><button class="btn btn-primary">Ny</button></a>
+
+    <!-- id er kun så formaterData() kan gjemme den bort med    $("#slettKnapp").hide() -->
+    <button id="slettKnapp" onclick="slettAlleBiletter()" class="btn btn-danger">Slett Alle</button>
+</div>
+
+
+
+
+
+
+</body>
+</html>
